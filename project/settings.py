@@ -9,7 +9,7 @@ DATABASES = {
         'HOST': os.getenv('HOST'),
         'PORT': os.getenv('PORT'),
         'NAME': os.getenv('NAME'),
-        'USER': os.getenv('USER'),
+        'USER': os.getenv('USERDB'),
         'PASSWORD': os.getenv('PASSWORD'),
     }
 }
@@ -18,7 +18,7 @@ INSTALLED_APPS = ['datacenter']
 
 SECRET_KEY = os.getenv('SECRET_KEY')
 
-DEBUG = True
+DEBUG = os.getenv('DEBUG')
 
 ROOT_URLCONF = "project.urls"
 
